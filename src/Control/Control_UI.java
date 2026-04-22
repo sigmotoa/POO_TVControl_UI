@@ -21,9 +21,15 @@ public class Control_UI {
 
     public Control_UI() {
 
+        BackgrounImg backgrounImg = new BackgrounImg();
+        backgrounImg.setLayout(new BorderLayout());
+        backgrounImg.add(mainPanel);
+
+        mainPanel = backgrounImg;
         volProgress.setMinimum(0);
         volProgress.setMaximum(10);
         volProgress.setValue(vol);
+        volProgress.setStringPainted(true);
         comboBoxInput.setModel(new DefaultComboBoxModel<>(InputSourceTV.values()));
 
         button1.addActionListener(new ActionListener() {

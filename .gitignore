@@ -3,6 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+!src/Control/cometa.png
 ### Eclipse ###
 .apt_generated
 .classpath
